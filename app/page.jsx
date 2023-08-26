@@ -1,6 +1,7 @@
 import HeaderPart from "./Pages/HeaderPart";
-import EggPart from "./Pages/EggPart";
 import Box from "./component/Box";
+import OrangePart from "./Pages/OrangePart";
+import Testimonials from "./Pages/Testimonials";
 export default function Home() {
   return (
     <>
@@ -16,6 +17,8 @@ export default function Home() {
         content="Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places."
         reverse
       />
+      <OrangePart/>
+      <Testimonials/>
 
       <div>Hello</div>
     </>
