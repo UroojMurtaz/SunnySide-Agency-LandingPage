@@ -2,8 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 const Box = ({ title, content, imageName, reverse,underLineColor }) => {
-  console.log("under",underLineColor)
-  console.log("title",title)
+ 
   return (
     <div
       className={`w-full flex flex-col-reverse 
