@@ -1,7 +1,9 @@
 import Image from "next/image";
 import React from "react";
 
-const Box = ({ title, content, imageName, reverse }) => {
+const Box = ({ title, content, imageName, reverse,underLineColor }) => {
+  console.log("under",underLineColor)
+  console.log("title",title)
   return (
     <div
       className={`w-full flex flex-col-reverse 
@@ -14,9 +16,13 @@ const Box = ({ title, content, imageName, reverse }) => {
             {title}
           </div>
           <p className=" flex  text-slate-400 font-semibold mb-5">{content}</p>
-          <button className="py-1 font-semibold text-sm mt-2 relative">
+          <button className="px-1 font-bold text-sm mt-2 relative"
+          style={{color:"hsl(212, 27%, 19%)"}}
+          >
             LEARN MORE
-            <span className="absolute bottom-0 left-0 w-full h-1 bg-yellow-500 shadow-md"></span>
+            <span className="absolute bottom-0 left-0 w-full h-1 shadow-md opacity-30 p-1 rounded-full"
+             style={{backgroundColor :reverse ? "hsl(7, 99%, 70%)":"hsl(51, 100%, 49%)"}}
+            ></span>
           </button>
         </div>
       </div>

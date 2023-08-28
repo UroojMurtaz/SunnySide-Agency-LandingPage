@@ -2,6 +2,8 @@ import HeaderPart from "./Pages/HeaderPart";
 import Box from "./component/Box";
 import OrangePart from "./Pages/OrangePart";
 import Testimonials from "./Pages/Testimonials";
+import ImageContainer from "./Pages/ImageContainer";
+import Footer from "./component/Footer";
 export default function Home() {
   return (
     <>
@@ -17,10 +19,10 @@ export default function Home() {
         content="Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places."
         reverse
       />
-      <OrangePart/>
-      <Testimonials/>
-
-      <div>Hello</div>
+      <OrangePart />
+      <Testimonials />
+      <ImageContainer />
+      <Footer />
     </>
   );
 }

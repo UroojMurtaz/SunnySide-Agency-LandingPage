@@ -1,9 +1,11 @@
+`use client`;
 import Header from "@/app/component/Header";
 import Image from "next/image";
-import React from "react";
+
 // import headerimage from "../../Images/image-header.jpg"
 
 const index = () => {
+
   return (
     <section
       style={{ backgroundImage: "url(/Images/image-header.jpg)" }}
@@ -11,14 +13,17 @@ const index = () => {
     >
       <Header />
 
-      <div className="text-center mx-auto ">
-        <h1 className="text-4xl font-semibold mb-45">WE ARE CREATIVES</h1>
+      <div className="mt-10 p-10">
+        <h1 className="text-5xl  sm:text-4xl font-bold mb-45 text-center">
+          WE ARE CREATIVES
+        </h1>
+
         <Image
-          className="inline-block mt-20"
           src="/Images/icon-arrow-down.svg"
-          width={27}
-          height={27}
+          width={20}
+          height={24}
           alt="header-image"
+          className="ml-auto mr-auto mt-20 w-10 h-24 "
         />
       </div>
     </section>

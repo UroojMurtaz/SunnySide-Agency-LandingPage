@@ -29,9 +29,9 @@ const index = () => {
     },
   ];
   return (
-    <div className="p-20">
+    <div className="sm:p-20 sm:m-20 p-10">
       <h1
-        className="text-center m-10 mb-10 text-2xl font-bold"
+        className="text-center mb-10 text-2xl font-bold"
         style={{ color: "hsl(210, 4%, 67%)" }}
       >
         CLIENT TESTIMONIALS
