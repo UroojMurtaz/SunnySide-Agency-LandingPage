@@ -1,8 +1,5 @@
-`use client`;
 import Header from "@/app/component/Header";
 import Image from "next/image";
-
-// import headerimage from "../../Images/image-header.jpg"
 
 const index = () => {
 

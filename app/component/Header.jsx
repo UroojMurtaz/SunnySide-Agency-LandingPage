@@ -1,11 +1,11 @@
-"use client";
+// "use client";
 
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React from "react";
 
 const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false); // State for mobile menu
+  // const [menuOpen, setMenuOpen] = useState(false); // State for mobile menu
   return (
     <div className="flex justify-between items-center p-5 bg-transparent z-10">
       <Image src="logo.svg" roundedCircle width={120} height={120} alt="logo" />
@@ -24,7 +24,7 @@ const Header = () => {
         </button>
         {/* Icon for small screens */}
         <div className="block sm:hidden" >
-          <Image src={"/Images/icon-hamburger.svg"} width={20} height={20} onClick={()=>Alert("Hello")}/>
+          <Image src={"/Images/icon-hamburger.svg"} width={20} height={20} />
         </div>
       </div>
     </div>
